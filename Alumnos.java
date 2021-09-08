@@ -10,27 +10,13 @@ public class Alumnos {
 		ArrayList<String> nombreAlumnos = new ArrayList<>();
 		sc.nextLine();
 		for (int i=0; i<cantidadAlumnos; i++) {
-			System.out.println("Introduce el nombre del alumno");
+			System.out.println("Por favor, introduzca el nombre del alumno");
 			nombre = sc.nextLine();
 			nombreAlumnos.add(nombre);
-			//System.out.println(nombre);
-			//nombreAlumnos.add(nombre);
 		}
 		return nombreAlumnos;
 	}
 	
-	public static int leerIntDesdeTeclado() {
-		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		sc.close();
-		return num;
-	}
-	public static String leerStringDesdeTeclado() {
-		Scanner sc = new Scanner(System.in);
-		String texto = sc.nextLine();
-		sc.close();
-		return texto;
-	}
 	public static ArrayList<Integer> obtenerEdades(int cantidadAlumnos, ArrayList<String> nombreAlumnos, Scanner sc){
 		ArrayList<Integer> edadesAlumnos = new ArrayList<>();
 		for (String nombre:nombreAlumnos) {
@@ -81,7 +67,6 @@ public class Alumnos {
 			esEntero = sc.hasNextInt();
 		}
 		int numeroAlumnos = sc.nextInt();
-		System.out.println(numeroAlumnos);
 		obtenerInformacionAlumno(numeroAlumnos,sc);
 		sc.close();
 	}
