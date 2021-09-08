@@ -62,9 +62,9 @@ public class Alumnos {
 		nombreAlumnos = obtenerNombres(cantidadAlumnos,sc);
 		edadAlumnos = obtenerEdades(cantidadAlumnos, nombreAlumnos,sc);
 		float mediaEdades = obtenerMediaEdades(edadAlumnos);
-		System.out.println("INFORMACIÓN DE CLASE:");
+		System.out.println("INFORMACIÃ“N DE CLASE:");
 		for(int i=0;i<cantidadAlumnos;i++) {
-			System.out.println("El alumno "+nombreAlumnos.get(i)+" tiene "+edadAlumnos.get(i)+" años");
+			System.out.println("El alumno "+nombreAlumnos.get(i)+" tiene "+edadAlumnos.get(i)+" aÃ±os");
 		}
 		System.out.println("La media de alumnos es: "+mediaEdades);
 		
@@ -73,7 +73,13 @@ public class Alumnos {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("¿Cuantas personas hay  en clase?");
+		System.out.println("Â¿Cuantas personas hay  en clase?");
+		boolean esEntero = sc.hasNextInt();
+		while(!esEntero) {
+			sc.nextLine();
+			System.out.println("Ha escrito mal la cantidad. Intentelo de nuevo");
+			esEntero = sc.hasNextInt();
+		}
 		int numeroAlumnos = sc.nextInt();
 		System.out.println(numeroAlumnos);
 		obtenerInformacionAlumno(numeroAlumnos,sc);
