@@ -1,26 +1,14 @@
-# Acceso_a_datos
+# Repaso Java
 
-## Unidades didácticas
-1. Manejo de ficheros
-2. Manejo de conectores
-3. Herramientas de mapeo objeto relacional (ORM)
-4. Bases de datos objeto-relacionales y orientadas a objetos
-5. Bases de datos xml
+## Ejercicio modularidad
+- **Realizar un programa Java, en el que se dan de alta alumnos de la escuela, y posteriormente mostrar sus datos.**
+1. Preguntar cuántos alumnos matriculados hay y guardar esa cantidad.
+2. Según el número de alumnos matriculados, preguntar sus nombres y sus edades.
+3. Mostrar la información obtenida anteriormente: Nombre y edad de cada alumno
+4. Obtener la media de la edades de los alumnos
+5. Mostrar qué alumno es el que tiene mayor edad (mostrando el alumno y su edad)
+6. Mostrar qué alumno es el que tiene menor edad (mostrando el alumno y su edad)
+7. Obtener el alumno con el nombre más largo.
 
-### Manejo de ficheros
-- Utilizar clases para la gestión de ficheros y directorios
-- Valorar las ventajas y los inconvenientes de las distintas formas de acceso
-- Utilizar las operaciones básicas para acceder a ficheros de acceso secuencial y aleatorio
-- Utilizar clases para almacenar y recuperar información almacenada en un fichero XML
-- Utilizar clases para convertir a otro formato información contenida en un fichero XML
-- Gestionar excepciones.
-- Serializar objetos Java a representaciones XML
-
-Obtenido del libro **Acceso a Datos** (2º Edición)
-
-> Alicia Ramos Martín
-
-> Maria Jesús Ramos Martín
-
-> Garceta grupo editorial
-
+**Para la entrega**: Subir el archivo .java que está en la carpeta src.
+> Jon Armendariz
